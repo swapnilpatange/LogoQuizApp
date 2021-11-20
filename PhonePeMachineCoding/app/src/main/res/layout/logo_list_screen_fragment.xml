@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.logolisting.LogoListScreenFragment">
+
+    <data class="LogoListingBinding">
+        <variable
+            name="callback"
+            type="app.phone.machinecoding.ui.logolisting.callback.LogoListCallback" />
+        <variable
+            name="viewModel"
+            type="app.phone.machinecoding.ui.logolisting.LogoListScreenViewModel" />
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:listener="@{  callback }"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:data="@{ viewModel.logoQuizList }"
+            tools:itemList="@{ @layout/item_stock_data }" />
+    </FrameLayout>
+</layout>
