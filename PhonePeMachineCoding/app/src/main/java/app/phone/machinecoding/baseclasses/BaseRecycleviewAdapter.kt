@@ -6,14 +6,14 @@ import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
-import app.phone.machinecoding.BR
+import phonepemachinecoding.BR
 
 class BaseRecycleviewAdapter<T>(
     @LayoutRes val resource: Int,
-    var data: ArrayList<T>,
+    var data: List<T>,
     val listener: Any? = null
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    fun updateData(data: ArrayList<T>) {
+    fun updateData(data: List<T>) {
         this.data = data
         notifyDataSetChanged()
     }

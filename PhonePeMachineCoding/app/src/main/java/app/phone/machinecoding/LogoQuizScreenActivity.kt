@@ -7,6 +7,7 @@ import app.phone.machinecoding.ui.logolisting.LogoListScreenFragment
 import app.phone.machinecoding.ui.logolisting.callback.LogoListCallback
 import app.phone.machinecoding.ui.logoguess.LogoGuessFragment
 import dagger.hilt.android.AndroidEntryPoint
+import phonepemachinecoding.R
 
 @AndroidEntryPoint
 class LogoQuizScreenActivity : AppCompatActivity(), LogoListCallback {

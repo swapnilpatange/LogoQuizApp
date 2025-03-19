@@ -7,10 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import app.phone.machinecoding.databinding.LogoListingBinding
 import app.phone.machinecoding.model.LogoQuizModel
 import app.phone.machinecoding.ui.logolisting.callback.LogoListCallback
 import dagger.hilt.android.AndroidEntryPoint
+import phonepemachinecoding.databinding.LogoListingBinding
 
 @AndroidEntryPoint
 class LogoListScreenFragment : Fragment(), LogoListCallback {

@@ -23,6 +23,6 @@
             tools:listener="@{  callback }"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:data="@{ viewModel.logoQuizList }"
-            tools:itemList="@{ @layout/item_stock_data }" />
+            tools:itemList="@{ @layout/logo_quiz_item }" />
     </FrameLayout>
 </layout>

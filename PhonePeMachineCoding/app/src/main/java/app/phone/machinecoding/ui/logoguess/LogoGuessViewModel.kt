@@ -9,9 +9,9 @@ import javax.inject.Inject
 @HiltViewModel
 class LogoGuessViewModel @Inject constructor(): ViewModel() {
 
-    val logoModel: MutableLiveData<LogoQuizModel> = MutableLiveData()
+    val logoModel: MutableLiveData<LogoQuizModel> = MutableLiveData(LogoQuizModel(""))
 
     fun loadArguments(logoQuizModel: LogoQuizModel?) {
-        logoModel.value = logoQuizModel
+        logoQuizModel?.let { logoModel.value = it }
     }
 }

@@ -18,10 +18,20 @@
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:id="@+id/image"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             imageUrl="@{ model.imgUrl }"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/image"
+            app:layout_constraintEnd_toEndOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/image"
+            android:text="@{ model.name }"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

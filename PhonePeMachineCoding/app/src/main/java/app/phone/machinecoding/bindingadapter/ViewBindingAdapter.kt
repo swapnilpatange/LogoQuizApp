@@ -3,10 +3,9 @@ package app.phone.machinecoding.bindingadapter
 import androidx.annotation.LayoutRes
 import androidx.databinding.BindingAdapter
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
-import app.phone.machinecoding.R
 import app.phone.machinecoding.baseclasses.BaseRecycleviewAdapter
+import phonepemachinecoding.R
 
 object ViewBindingAdapter {
 
@@ -17,7 +16,7 @@ object ViewBindingAdapter {
     )
     fun <T> setAdapter(
         recyclerView: RecyclerView,
-        data: LiveData<ArrayList<T>>?,
+        data: LiveData<List<T>>?,
         @LayoutRes listItem: Int = R.layout.logo_quiz_item,
         listener: Any?
     ) {

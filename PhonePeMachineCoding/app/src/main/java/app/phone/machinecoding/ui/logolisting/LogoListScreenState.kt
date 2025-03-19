@@ -4,6 +4,6 @@ import app.phone.machinecoding.model.LogoQuizModel
 
 sealed class LogoListScreenState {
     object Loading : LogoListScreenState()
-    data class LoadingSuccess(val logoQuizModels: ArrayList<LogoQuizModel>) : LogoListScreenState()
+    data class LoadingSuccess(val logoQuizModels: List<LogoQuizModel>) : LogoListScreenState()
     object LoadingFailed : LogoListScreenState()
 }

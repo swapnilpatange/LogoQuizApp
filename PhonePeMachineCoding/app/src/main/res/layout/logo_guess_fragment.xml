@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".ui.logoguess.LogoGuessFragment">
 
         <ImageView
+            android:contentDescription="@string/image"
             imageUrl="@{ viewModel.logoModel.imgUrl }"
             android:layout_width="120dp"
             android:layout_height="120dp" />
-    </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{ viewModel.logoModel.name }"/>
+    </LinearLayout>
 
     <data class="LogoGuessBinding">
 
